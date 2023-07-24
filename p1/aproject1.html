@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            display: flex;
+            flex-direction: row;
+            
+            width: 100%;
+            height: 100px;
+        }
+
+        .leftsideoflogo {
+            display: flex;
+            flex-direction: row;
+            
+            gap: 15px;
+            height: 50px;
+            margin-left: 80px;
+            margin-top: 37px;
+        }
+
+        .logo {
+            width: 26px;
+            height: 22px;
+            margin-top: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: row;
+            gap: 90px;
+            
+            margin-top: 35px;
+            margin-left: 205px;
+            align-items: center;
+        }
+
+        .greylink {
+            text-decoration: none;
+            color: grey;
+
+        }
+
+        #link1 {
+            color: orange;
+        }
+
+        .rightnavbar {
+    
+            margin-left: 300px;
+            margin-top: 35px;
+        }
+
+        .signupButton {
+            color: black;
+            text-align: center;
+            border: 1px solid black;
+            width: 132px;
+            height: 44px;
+            margin-top: 7px;
+        }
+
+        .maincontent {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .leftmain {
+            width: 53%;
+            height: 500px;
+            
+        }
+
+        .mainheading {
+            
+            margin-top: 60px;
+            margin-left: 80px;
+        }
+
+        .mainheading1 {
+            font-size: 50px;
+        }
+
+        .mainheading2 {
+            font-size: 50px;
+            margin-top: -26px;
+        }
+
+        .maintext {
+            border-left: 1px solid gray;
+            margin-left: 80px;
+            margin-top: 30px;
+            width: 340px;
+        }
+
+        .maintext1 {
+            font-size: 20px;
+            margin-left: 10px;
+            color: gray;
+        }
+
+        .mainbuttons {
+            margin-left: 80px;
+
+            display: flex;
+            flex-direction: row;
+            gap: 38px;
+            margin-top: 13px;
+
+        }
+
+        .getstarted {
+            background: rgb(252, 140, 3);
+            color: white;
+            height: 50px;
+            width: 140px;
+            text-align: center;
+        }
+
+        .learnmore {
+            border: 1px solid black;
+            text-align: center;
+            width: 140px;
+            height: 50px;
+        }
+
+        .mainimg {
+            width: 47%;
+        
+            height: 500px;
+        }
+
+        .mainimgpatern {
+            height: 342px;
+            margin-top: 59px;
+            position: relative;
+            bottom: 26px;
+            left: -1px;
+            z-index: 3;
+        }
+
+        .mainimgcolor {
+            height: 342px;
+            margin-top: 59px;
+            position: relative;
+            left: 67px;
+            z-index: 1;
+            bottom: 410px;
+        }
+
+        .mainpersonimg {
+            height: 336px;
+            margin-top: 59px;
+            position: relative;
+            right: 200px;
+            bottom: 415px;
+            z-index: 2;
+            width: 190px;
+
+        }
+
+        .curvearrow {
+            margin-top: 20x;
+            margin-left: 57px;
+
+        }
+
+        .curvearrow img {
+
+            height: 90px;
+        }
+
+        .circleimg {
+            position: relative;
+
+            top: 440;
+            left: 440px;
+        }
+
+        
+
+        .arrowgreen {
+            position: relative;
+            left: -490px;
+            top: -360px;
+        }
+
+        .arroworange {
+            position: relative;
+            top: -350px;
+            left: 20px;
+
+        }
+
+        .footer {
+            width: 100%;
+            height: 300px;
+            background-color: rgba(7, 2, 31, 0.907);
+            display: flex;
+            flex-direction: row;
+        }
+
+        .leftpartfooter {
+            display: flex;
+            flex-direction: column;
+            width: 430px;
+            height: 300px;
+            
+        }
+
+        .footerhead1 {
+            color: white;
+            margin-left: 60px;
+            font-size: 45px;
+        }
+
+        .footerhead2 {
+            color: white;
+            margin-left: 60px;
+            margin-top: -30px;
+            font-size: 45px;
+        }
+
+        .footerpara {
+            margin-top: -30px;
+        }
+
+        .footerpara1 {
+            color: gray;
+            margin-left: 60px;
+            font-size: 23px;
+
+        }
+
+        .footerpara2 {
+            color: gray;
+            margin-left: 60px;
+            margin-top: -21px;
+            font-size: 23px;
+        }
+
+        .footerright1 {
+            
+            width: 260px;
+            height: 300px;
+        }
+
+        .footerimg1 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(0, 255, 174) ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-left: 40px;
+            margin-top: 40px;
+
+        }
+
+        .whitefooterheadings {
+            color: white;
+            margin-left: 35px;
+        }
+
+        .teacherpara1 {
+            color: gray;
+            margin-left: 35px;
+
+        }
+
+        .teacherpara2 {
+            color: gray;
+            margin-top: -13px;
+            margin-left: 35px;
+        }
+
+        .footerright2 {
+            
+            width: 260px;
+            height: 300px;
+        }
+
+
+        .footerimg2 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(255, 149, 0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+
+
+        .coursepara1 {
+            color: gray;
+            margin-top: -13px;
+            margin-left: 35px;
+
+        }
+
+        .coursepara2 {
+            color: gray;
+            margin-top: -13px;
+            margin-left: 35px;
+
+        }
+
+
+        .footerright3 {
+            
+            width: 260px;
+            height: 300px;
+        }
+
+
+        .footerimg3 {
+            width: 50px;
+            height: 50px;
+            background-color: rgb(40, 40, 246);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 3px;
+            margin-left: 40px;
+            margin-top: 40px;
+        }
+
+
+        .supportpara1 {
+            color: gray;
+            margin-top: -13px;
+            margin-left: 35px;
+
+        }
+
+        .supportpara2 {
+            color: gray;
+            margin-top: -13px;
+            margin-left: 35px;
+
+        }
+
+
+
+        @media only screen and (max-width: 400px) {
+
+            .navbar {
+                width: 400px;
+                height: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .links {
+                display: none;
+            }
+
+            .rightnavbar {
+                display: none;
+            }
+
+            .signupbutton {
+                display: none;
+            }
+
+            .leftsideoflogo {
+                display: flex;
+                flex-direction: row;
+            
+                gap: 15px;
+                height: 41px;
+                width: 124px;
+                margin-top: 2px;
+                margin-left: 0px;
+            }
+
+
+            .maincontent {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .leftmain {
+                width: 400px;
+                height: 230px;
+                border: 1px solid rebeccapurple;
+            
+            }
+
+            .mainheading {
+                margin-top: 3px;
+                margin-left: 0px;
+            }
+
+            .mainheading1 {
+                font-size: 28px;
+                color: black;
+
+            }
+
+            .mainheading2 {
+                font-size: 28px;
+                margin-top: -17px;
+                color: black;
+            }
+
+  .maintext {
+            border-left: 1px solid gray;
+            margin-left: 8px;
+            margin-top: 10px;
+            width: 240px; }
+              
+
+ .maintext1 {
+            font-size: 14px;
+            margin-left: 10px;
+            color: gray;
+        }
+
+
+
+ .mainbuttons {
+            margin-left: 8px;
+
+            display: flex;
+            flex-direction: row;
+            gap: 16px;
+            margin-top: 26px;
+            width: 400px;
+            margin-left: 43px;
+
+        }
+
+        .getstarted {
+            background: rgb(252, 140, 3);
+            color: white;
+            height: 50px;
+            width: 140px;
+            text-align: center;
+            position: relative;
+            top: 277px;
+        }
+
+        .learnmore {
+            
+            text-align: center;
+            width: 140px;
+            height: 50px;
+            
+            position: relative;
+            top: 277px;
+        }
+
+
+ .mainimg {
+            width: 400px;
+            
+            height: 90px;
+        }
+
+  .mainimgpatern {
+            height: 200px;
+            margin-top: 25px;
+            position: relative;
+            bottom: 64px;
+            left: 29px;
+            z-index: 3;
+        }
+
+        .mainimgcolor {
+            height: 200px;
+            margin-top: 25px;
+            position: relative;
+            left: 74px;
+            z-index: 1;
+            bottom: 327px;
+        }
+
+        .mainpersonimg {
+            height: 206px;
+            margin-top: 65px;
+            position: relative;
+            right: 74px;
+            bottom: 329px;
+            z-index: 2;
+            width: 90px;
+
+        }
+        .arroworange {
+            position: relative;
+            left: 46px;
+            top: -257px;
+            width: 14px;
+            height: 16px;
+        }
+
+        
+
+.circleimg {
+            position: relative;
+            top: -50px;
+            left: 300px;
+            width: 15px;
+
+            
+        } 
+
+ .arrowgreen {
+            position: relative;
+            left: -277px;
+            top: -312px;
+            width: 19px;
+        }
+
+
+   .curvearrow {
+            position: relative;
+            top: 337px;
+            right: 190px;
+            width: 10px;
+            height: 12px;
+}
+  
+    
+    .footer{
+         margin-top: 300px;
+         display: flex;
+         flex-direction: column;
+         height: 900px;
+    }
+   
+    .footerright1 {
+        margin-left: 49px;
+    } 
+
+
+ .footerright2 {
+        margin-left: 49px;
+    }
+    .footerright3 {
+        margin-left: 49px;
+    }
+
+    .footerimg1 {
+        margin-left: 86px;
+    } 
+
+    
+    .footerimg2 {
+        margin-left: 86px;
+    }
+
+
+    .footerimg3 {
+        margin-left: 86px;
+    }
+
+
+
+
+}
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="leftsideoflogo">
+            <img src="logo.png" alt="" class="logo">
+            <h2> E Guru</h2>
+        </div>
+        <div class="links">
+            <a href="" id="link1" class="greylink">Home</a>
+            <a href="" id="link2" class="greylink">About Us</a>
+            <a href="" id="link3" class="greylink">Features</a>
+            <a href="" id="link4" class="greylink">How it Works</a>
+        </div>
+        <div class="rightnavbar">
+            <button class="signupButton">Sign Up</button>
+        </div>
+
+    </div>
+    <div class="maincontent">
+
+        <div class="leftmain">
+            <div class="mainheading">
+                <h1 class="mainheading1">Study From</h1>
+                <h1 class="mainheading2">Home With Expert</h1>
+            </div>
+
+            <div class="maintext">
+                <p class="maintext1"> A learning System based on formalised teaching with the help of resources</p>
+            </div>
+            <div class="mainbuttons">
+                <button class="getstarted">Get Started</button>
+                <button class="learnmore">Learn more</button>
+                <div class="curvearrow">
+                    <img src="curve-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="mainimg">
+            <img src="orange-arrow.png" alt="" class="arroworange">
+            <img src="circle.png" alt="" class="circleimg">
+            <img src="main-image-pattern.png" alt="" class="mainimgpatern">
+            <img src="main-image-bg.png" alt="" class="mainimgcolor">
+            <img src="main-image.png" alt="" class="mainpersonimg">
+
+            <img src="green-arrow.png" alt="" class="arrowgreen">
+
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="leftpartfooter">
+            <h1 class="footerhead1">Why We Are</h1>
+            <h1 class="footerhead2">The Best</h1>
+            <div class="footerpara">
+                <p class="footerpara1">a learning based on</p>
+                <p class="footerpara2">formalised teaching with help of...</p>
+            </div>
+
+        </div>
+
+        <div class="footerright1">
+            <div class="footerimg1">
+                <img src="vector3.png" alt="">
+            </div>
+            <h2 class="whitefooterheadings">Expert Teacher</h2>
+            <p class="teacherpara1">a learning system based </p>
+            <p class="teacherpara2"> on formalised teaching</p>
+        </div>
+
+        <div class="footerright2">
+            <div class="footerimg2">
+                <img src="vector2.png" alt="">
+            </div>
+            <h2 class="whitefooterheadings">Online Courses</h2>
+            <p class="coursepara1">a learning system based </p>
+            <p class="coursepara1">on formalised teaching</p>
+        </div>
+
+
+        <div class="footerright3">
+            <div class="footerimg3">
+                <img src="vector3.png" alt="">
+            </div>
+            <h2 class="whitefooterheadings">24/7 Support</h2>
+            <p class="supportpara1">a learning system based </p>
+            <p class="supportpara1">on formalised teaching</p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
